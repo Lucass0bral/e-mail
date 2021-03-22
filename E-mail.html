@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Teste E-mail</title>
+</head>
+<style>
+    body{
+        font-size: 10px;
+        background-color: dodgerblue;
+    }  
+    form{
+        font-size: 3em;
+        font-family: 'Segoe UI';
+        color: #ffffff;
+        font-weight: bold;    
+    }
+    #btn{
+        font-size: 0.5em;
+        font-family: 'Segoe UI';
+        background-color: #ffffff;
+        font-weight: bold;  
+        color: rgb(134, 132, 132);
+        border-style: none;
+    }
+</style>
+<script language="javascript" text="txt/javascript" src="e-mail.js"></script>
+<body>
+    <form action="enviar.php" method="post" onSubmit="return verificaemail()">
+        <label for="txtemail">E-mail</label></br>
+        <input type="text" name="txtemail" id="email"></br>
+        <input type="submit" value="Enviar" id="btn"></br>
+    </form>
+</body>
+</html>
